@@ -26,6 +26,9 @@ const useStyles = makeStyles({
         width:270,
         display:'inline-block',
         margin:'20px',
+        backgroundColor: '#232323',
+        color: '#fff',
+
     }
 });
 
@@ -37,17 +40,17 @@ const EmployeeData = (props) => {
       
             <Card className={classes.root} className={classes.cardStyle}>
                     <CardContent>
-                        <Typography className={classes.title} color="textSecondary" gutterBottom>
+                        <Typography variant="overline" className={classes.title}gutterBottom>
                             {props.userName}
                         </Typography>
-                        <Typography variant="h5" component="h2">
+                        <Typography variant="h5" component="h2" style={{color:'palevioletred'}}>
                         {props.date}
                         </Typography>
-                        <Typography className={classes.pos} color="textSecondary">
+                        <Typography  variant="overline" className={classes.pos}>
                             Project: {props.project}
                         </Typography>
                         <Typography variant="body2" component="p">
-                            Task:
+                            Task: {props.taskId}
                             <ul>
                             <li>{props.task1}</li>
                             <li>{props.task2}</li>

@@ -13,6 +13,7 @@ const App=()=>{
             role={value.role} 
             date={value.date} 
             project={value.project}
+            taskId={value.task.taskId}   
             task1={value.task.one}   
             task2={value.task.two}   
             />
@@ -23,7 +24,7 @@ const App=()=>{
     return(
         <>
             <Container fixed>
-            <h1>Employee task details </h1>
+            <h1 style={{textTransform:'uppercase'}}>Employee task details:  </h1>
             {Data.map(callfunc)} 
             </Container>
         </>

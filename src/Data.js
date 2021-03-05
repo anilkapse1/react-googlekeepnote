@@ -1,57 +1,62 @@
 const Data = [
     {
         id:1,
-        userName:"anil kapse",
+        userName:"Nikesh Arora",
         role:"ui developer",
         date:"01/03/2021",
-        project:"kcw",
+        project:"Softbank",
         task:{
-            one:"fixing bugs",
-            two:"creation of mockup",
+            taskId:"JRO07",
+            one:"Creating a structure, and implementing API",
+            two:"Module creation",
         }
     },
     {
         id:2,
-        userName:"ronak gore",
+        userName:"Rajeev Suri",
         role:"ui developer",
         date:"02/03/2021",
-        project:"kcw",
+        project:"Nokia",
         task:{
-            one:"fixing bugs",
-            two:"creation of mockup",
+            taskId:"895GM",
+            one:"Creating a structure, and implementing API",
+            two:"Module creation",
         }
     },
     {
         id:3,
-        userName:"harshal mukte",
+        userName:"Nandan Nilekani",
         role:"ui developer",
         date:"03/03/2021",
-        project:"kcw",
+        project:"infosys",
         task:{
-            one:"fixing bugs",
-            two:"creation of mockup",
+            taskId:"KLOP23",
+            one:"Creating a structure, and implementing API",
+            two:"Module creation",
         }
     },
     {
         id:4,
-        userName:"harshal mukte",
+        userName:"satya nadella",
         role:"ui developer",
         date:"04/03/2021",
-        project:"kcw",
+        project:"Microsoft",
         task:{
-            one:"fixing bugs",
-            two:"creation of mockup",
+            taskId:"IH9KH",
+            one:"Creating a structure, and implementing API",
+            two:"Module creation",
         }
     },
     {
         id:5,
-        userName:"harshal mukte",
+        userName:"Shantanu Narayen",
         role:"ui developer",
         date:"05/03/2021",
-        project:"kcw",
+        project:"Adobe",
         task:{
-            one:"fixing bugs",
-            two:"creation of mockup",
+            taskId:"12HW32",
+            one:"Creating a structure, and implementing API",
+            two:"Module creation",
         }
     }
 
