@@ -1,11 +1,31 @@
 import React from 'react';
-import './App.css';
-import Test from './Test';
+import EmployeeData from './EmployeeData';
+import Data from './Data';
+import Container from '@material-ui/core/Container';
 
 const App=()=>{
+    console.log(Data);
+    const callfunc = (value)=>{
+        return(
+            <EmployeeData 
+            key={value.id} 
+            userName={value.userName} 
+            role={value.role} 
+            date={value.date} 
+            project={value.project}
+            task1={value.task.one}   
+            task2={value.task.two}   
+            />
+        )    
+
+    }
+
     return(
         <>
-            <Test/>    
+            <Container fixed>
+            <h1>Employee task details </h1>
+            {Data.map(callfunc)} 
+            </Container>
         </>
     )
 }

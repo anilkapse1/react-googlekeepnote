@@ -1,31 +1,58 @@
 const Data = [
     {
         id:1,
-        imgSrc:"https://cdn.pixabay.com/photo/2019/08/09/21/20/james-dean-4395893_960_720.jpg",
         userName:"anil kapse",
-        roll:"ui developer",
-
+        role:"ui developer",
+        date:"01/03/2021",
+        project:"kcw",
+        task:{
+            one:"fixing bugs",
+            two:"creation of mockup",
+        }
     },
     {
         id:2,
-        imgSrc:"https://cdn.pixabay.com/photo/2019/05/16/16/50/man-4207514_960_720.jpg",
         userName:"ronak gore",
-        roll:"java developer",
-
+        role:"ui developer",
+        date:"02/03/2021",
+        project:"kcw",
+        task:{
+            one:"fixing bugs",
+            two:"creation of mockup",
+        }
     },
     {
         id:3,
-        imgSrc:"https://cdn.pixabay.com/photo/2016/01/20/23/10/bowie-1152551_960_720.png",
         userName:"harshal mukte",
-        roll:".net developer",
-
+        role:"ui developer",
+        date:"03/03/2021",
+        project:"kcw",
+        task:{
+            one:"fixing bugs",
+            two:"creation of mockup",
+        }
     },
     {
         id:4,
-        imgSrc:"https://cdn.pixabay.com/photo/2016/01/20/23/10/bowie-1152551_960_720.png",
         userName:"harshal mukte",
-        roll:".net developer",
-
+        role:"ui developer",
+        date:"04/03/2021",
+        project:"kcw",
+        task:{
+            one:"fixing bugs",
+            two:"creation of mockup",
+        }
+    },
+    {
+        id:5,
+        userName:"harshal mukte",
+        role:"ui developer",
+        date:"05/03/2021",
+        project:"kcw",
+        task:{
+            one:"fixing bugs",
+            two:"creation of mockup",
+        }
     }
 
 ]
