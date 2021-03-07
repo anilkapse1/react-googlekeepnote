@@ -1,14 +1,18 @@
 import { makeStyles } from '@material-ui/core/styles';
+
 const useStyles = makeStyles({
+
     container: {
         maxWidth:'700px',
-        border:'1px solid red',
         margin:'100px auto',
         padding:'20px',
     },
     formSection:{
         display:'flex',
-        flexDirection:'column'
+        flexDirection:'column',
+        justifyContent: 'space-between',
+        height:'250px'
+
     },
     header: {
         backgroundColor: '#736b6b',
@@ -17,12 +21,7 @@ const useStyles = makeStyles({
         justifyContent: 'space-between',
         alignItems: 'center',
     },
-    footer: {
-        backgroundColor: '#736b6b',
-        padding:'20px',
-        color:'#eaad02',
-        textAlign:'right',
-    },
+ 
 
 
 });

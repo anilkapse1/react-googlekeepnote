@@ -3,8 +3,9 @@ import React, { useState } from 'react';
 import Button from '@material-ui/core/Button';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import useStyles from './Keepnotecss';
+import TextField from '@material-ui/core/TextField';
 
-const Keepnote=()=>{
+const Keepnote=(props)=>{
 
     const [note, setnote]=useState({
         title:'',
@@ -17,43 +18,56 @@ const Keepnote=()=>{
         setnote((oldvalue)=>{
             return  {
                 ...oldvalue,
-                [name]:value
+                [name]:value    
             }
         })
     }
 
     const addEvent=()=>{
-        
+        props.callEvent(note);
+        setnote({
+            title:'',
+            content:'',
+        })
     }
 
 
     const classes = useStyles();
     return(
         <div className={classes.container}>
-            <form className={classes.formSection}>
-                <input 
-                    type="text" 
-                    placeholder="title"
-                    name="title"
-                    value={note.title}                   
-                    onChange={inputEvent} 
-                    autoComplete="off"/>
+        
+            <form  className={classes.formSection} noValidate autoComplete="off">
+                <TextField 
+                    m={2}
+                    id="standard-basic" 
+                    label="title" 
+                    name="title" 
+                    value={note.title} 
+                    onChange={inputEvent} />
+
+                 <TextField
+                    id="outlined-multiline-static"
+                    label="type a note" 
+                    multiline
+                    rows={4}
+                    defaultValue="Default Value"
+                    variant="outlined"
+                    name="content"
+                    value={note.content} 
+                    onChange={inputEvent}
+                    defaultValue="Default Value"
+                    />    
                 
-                <textarea 
-                    rows="" 
-                    column=""
-                    name="content" 
-                    value={note.content}
-                    onChange={inputEvent} 
-                    placeholder="type a note"
-                    >
-                </textarea>
+               
 
 
                 <Button onClick={addEvent}>
                     <AddCircleIcon/>
                 </Button>
             </form> 
+
+          
+        
         </div>
     )
 }

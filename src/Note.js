@@ -1,16 +1,20 @@
 
 import DeleteIcon from '@material-ui/icons/Delete';
 import Button from '@material-ui/core/Button';
-const Note=()=>{
+const Note=(props)=>{
+
+    const deleteNote=()=>{
+        props.deleteItem(props.id);
+    }
 
     return(
         <>
             <div className="note">
-                <h1>title</h1>
+                <h1>{props.title}</h1>
                 <br/>
-                <p>content......</p>
+                <p>{props.content}</p>
                 <br/>
-                <Button><DeleteIcon/></Button>
+                <Button onClick={deleteNote}><DeleteIcon/></Button>
                 
             </div>
         </>

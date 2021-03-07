@@ -7,7 +7,7 @@ const Header=()=>{
     return(
         <>
             <header className={classes.header}>
-                <img style={{maxWidth:150}} src={logo}/><h1 style={{color:'#eaad02'}}>Google keepnote</h1>
+                <img style={{maxWidth:50}} src={logo}/><h1 style={{color:'#eaad02'}}>Google keepnote</h1>
             </header>
         </>
     )
