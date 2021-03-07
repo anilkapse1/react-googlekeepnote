@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Keepnote from './Keepnote';
 import Header from './Header';
-
+import useStyles from './Keepnotecss';
 import Note from './Note';
 
 const App=()=>{
@@ -24,23 +24,25 @@ const App=()=>{
         })
     }   
 
+    const classes = useStyles();
     return(
         <>
             <Header/>
             <Keepnote callEvent={executeNote}/>
-          
-            {addItem.map((value,index)=>{  
-           
-                    return(
-                        <Note 
-                            key={index}
-                            id={index} 
-                            title={value.title} 
-                            content={value.content}
-                            deleteItem={onDelete}   
-                            />
-                    )
+            <div className={classes.gridContainer}>
+                {addItem.map((value,index)=>{  
+            
+                        return(
+                            <Note 
+                                key={index}
+                                id={index} 
+                                title={value.title} 
+                                content={value.content}
+                                deleteItem={onDelete}   
+                                />
+                        )
                 })}
+            </div>  
         </>
     )
 }

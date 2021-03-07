@@ -24,11 +24,17 @@ const Keepnote=(props)=>{
     }
 
     const addEvent=()=>{
-        props.callEvent(note);
-        setnote({
-            title:'',
-            content:'',
-        })
+        if(note.title=="" || note.content=="" ){
+            return false;
+        }
+        else{
+            props.callEvent(note);
+            setnote({
+                title:'',
+                content:'',
+            })
+    
+        }
     }
 
 
@@ -58,9 +64,6 @@ const Keepnote=(props)=>{
                     defaultValue="Default Value"
                     />    
                 
-               
-
-
                 <Button onClick={addEvent}>
                     <AddCircleIcon/>
                 </Button>
