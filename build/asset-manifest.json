@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-googlekeepnote/static/css/main.cb1d5645.chunk.css",
+    "main.js": "/react-googlekeepnote/static/js/main.25c301ce.chunk.js",
+    "main.js.map": "/react-googlekeepnote/static/js/main.25c301ce.chunk.js.map",
+    "runtime-main.js": "/react-googlekeepnote/static/js/runtime-main.5ba4c00b.js",
+    "runtime-main.js.map": "/react-googlekeepnote/static/js/runtime-main.5ba4c00b.js.map",
+    "static/js/2.1bd143b5.chunk.js": "/react-googlekeepnote/static/js/2.1bd143b5.chunk.js",
+    "static/js/2.1bd143b5.chunk.js.map": "/react-googlekeepnote/static/js/2.1bd143b5.chunk.js.map",
+    "static/js/3.855f5333.chunk.js": "/react-googlekeepnote/static/js/3.855f5333.chunk.js",
+    "static/js/3.855f5333.chunk.js.map": "/react-googlekeepnote/static/js/3.855f5333.chunk.js.map",
+    "index.html": "/react-googlekeepnote/index.html",
+    "static/css/main.cb1d5645.chunk.css.map": "/react-googlekeepnote/static/css/main.cb1d5645.chunk.css.map",
+    "static/js/2.1bd143b5.chunk.js.LICENSE.txt": "/react-googlekeepnote/static/js/2.1bd143b5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5ba4c00b.js",
+    "static/js/2.1bd143b5.chunk.js",
+    "static/css/main.cb1d5645.chunk.css",
+    "static/js/main.25c301ce.chunk.js"
+  ]
+}
